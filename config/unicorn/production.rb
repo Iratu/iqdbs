@@ -5,8 +5,8 @@ app_path = "/var/www/iqdbs/current"
 worker_processes 3
 
 timeout 180
-listen "127.0.0.1:9000", :tcp_nopush => true
-listen "/tmp/.unicorn.sock", :backlog => 64
+listen "127.0.0.1:9080", :tcp_nopush => true
+listen "/tmp/.unicorniqdbs.sock", :backlog => 64
 
 # Spawn unicorn master worker for user apps (group: apps)
 user 'danbooru', 'danbooru'
